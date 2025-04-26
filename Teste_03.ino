@@ -1,8 +1,3 @@
-/*Configurar a preferência com o link: 
-https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json */
-
-
-
 //inserir bibliotecas
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -118,4 +113,3 @@ if (!client.connected()) {
     client.publish("tacho/temperatura", payload.c_str()); // Publica a temperatura no tópico MQTT "tacho/temperatura".
   delay(1000);
 }
- 
